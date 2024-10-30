@@ -6,12 +6,12 @@ run-name: Testing out GitHub Actions
 on: [push, pull_request]
 
 # groups all the jobs in this workflow
-jobs: 
-	# define job name
+jobs:
+# define job name
   build: 
-	  # what runner
+  # what runner
     runs-on: ubuntu-latest
-		# group steps together
+    # group steps together
     steps:
     - run: echo "The job was automatically triggered by a ${{ github.event_name }} event."
     - uses: actions/checkout@v4
